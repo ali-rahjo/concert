@@ -1,0 +1,23 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <title>ticket sales system</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'ticketSales/css/style.css' %}">
+</head>
+<body>
+    <h1>lists of concerts</h1>
+    <ul>
+        {% if concertlist %}
+        <p>numbers of available concerts: {{concertcount}}</p>
+            {% for concert in concertlist %}
+            <li>
+                {{ concert }}
+            </li>
+            {% endfor %}
+        {% endif %}
+    </ul>
+</body>
+</html>

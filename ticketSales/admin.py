@@ -1,9 +1,9 @@
 from django.contrib import admin
-from .models import concertModel, locationModel,timeModel, ProfileModel, ticketModel
+from ticketSales.models import ConcertModel, LocationModel,TimeModel, ProfileModel, ticketModel
 # Register your models here.
 
-admin.site.register(concertModel)
-admin.site.register(locationModel)
-admin.site.register(timeModel)
+admin.site.register(ConcertModel)
+admin.site.register(LocationModel)
+admin.site.register(TimeModel)
 admin.site.register(ProfileModel)
 admin.site.register(ticketModel)
